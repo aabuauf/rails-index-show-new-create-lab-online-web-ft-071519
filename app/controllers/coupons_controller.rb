@@ -10,7 +10,7 @@ class CouponsController < ApplicationController
   end
   
   def create
-    
+    binding.pry
     @coupon = Coupon.new
     @coupon.coupon_code = params[:coupon][:coupon_code]
     @coupon.store = params[:coupon][:store]
